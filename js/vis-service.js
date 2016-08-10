@@ -286,7 +286,7 @@ angular.module('visualizationAppService', [])
           view = 'daily';
           var startDate = moment().subtract(89, 'days').format('YYYY-MM-DD');
           var endDate = moment().format('YYYY-MM-DD');
-          startkey = siteDateKey(null, startDate, 0, 'hitsperday');
+          startkey = siteDateKey(null, startDate, null, 'hitsperday');
           endkey = siteDateKey(null, endDate, {}, 'hitsperday');
           group = true;
           break;
@@ -297,7 +297,7 @@ angular.module('visualizationAppService', [])
           group = true;
           break;
         case 'dailyactivity':
-          startkey = siteDateKey(opts.siteId, opts.startDate, 0);
+          startkey = siteDateKey(opts.siteId, opts.startDate, null);
           endkey = siteDateKey(opts.siteId, opts.endDate, {});
           view = 'daily';
           group = true;
