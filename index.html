@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="visualizationApp">
   <head>
-    <title>IBM Cloud Data Services | Metrics Collector Visualization</title>
+    <title>IBM Cloud Data Services | Simple Logging Service Visualization</title>
 
     <script src="lib/angular.min.js"></script>
     <script src="lib/jquery.min.js"></script>
@@ -25,7 +25,7 @@
     <script type="text/javascript" 
       src="//ibm-cds-labs.github.io/dW/js/tracker.js" 
       siteid="cds.mc.vis" 
-      trackerurl="http://metrics-collector-ms.mybluemix.net/tracker"></script>
+      trackerurl="http://simple-logging-service-ms.mybluemix.net/tracker"></script>
 
     <link rel="stylesheet" href="lib/daterangepicker-bs3.css" type="text/css"/>
     <link rel="stylesheet" href="css/master.css" type="text/css">
@@ -40,7 +40,7 @@
       <nav class="bookend-layout_bookend theme_dark" ng-controller="navCtrl">
         <ul class="tree-nav">
           <li class="tree-nav_item">
-            <a class="tree-nav_link" href="#/">Metrics Collector Visualization</a>
+            <a class="tree-nav_link" href="#/">Simple Logging Service Visualization</a>
             <ul class="tree-nav">
               <li class="tree-nav_item">
                 <a class="tree-nav_link" href="#/summary"
@@ -62,17 +62,17 @@
     <script type="text/ng-template" id="home.html">
       <section class="layout_section">
         <h1 class="type_heading">
-          <mark class="type_mark">Welcome to the Metrics Collector Visualization!</mark>
+          <mark class="type_mark">Welcome to the Simple Logging Service Visualization!</mark>
         </h1>
         <p class="type_copy">
-          The Metrics Collector Visualization is a page for visualizing the data persisted
+          The Simple Logging Service Visualization is a page for visualizing the data persisted
           by the
           <a class="type_link" target="_blank"
             href="https://developer.ibm.com/clouddataservices/2016/03/03/simple-metrics-collector-microservices-edition/">
-            Simple Metrics Collector</a>.
+            Simple Logging Service</a>.
         </p>
         <p class="type_copy">
-          The Simple Metrics Collector is a web-tracking app to record user actions using 
+          The Simple Logging Service is a web-tracking app to record user actions using 
           the <a class="type_link" target="_blank" href="https://piwik.org">Piwik</a> library.
           The web analytics data is collected and stored in an 
           <a class="type_link" target="_blank"

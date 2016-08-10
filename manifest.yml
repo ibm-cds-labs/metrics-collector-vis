@@ -1,7 +1,7 @@
 ---
 applications:
 - buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-  host: metrics-collector-vis-${random-word}
-  name: metrics-collector-vis
+  host: simple-logging-service-vis-${random-word}
+  name: simple-logging-service-vis
   memory: 32M
   stack: cflinuxfs2
