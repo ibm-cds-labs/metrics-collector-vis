@@ -289,7 +289,7 @@ angular.module('visualizationAppService', [])
           startkey = siteDateKey(null, startDate, null, 'hitsperday');
           endkey = siteDateKey(null, endDate, {}, 'hitsperday');
           group = true;
-          dataVis.attr('featured', 'cds.devcenter');
+          dataVis.attr('standout', 'cds.devcenter');
           break;
         case 'sixmonthsdaily':
           startkey = moment().subtract(5, 'month').format('[[]YYYY,M,D[]]');
